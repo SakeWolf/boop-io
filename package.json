@@ -2,7 +2,7 @@
   "name": "boop-io",
   "version": "0.0.0",
   "description": "A room-based chat application intended for dice-rolling.",
-  "main": "index.js",
+  "main": "app/index.js",
   "directories": {
     "test": "tests"
   },
