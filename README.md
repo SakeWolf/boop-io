@@ -8,7 +8,11 @@ For testing, boop-io currently uses
 - Mocha
 
 ## Setting Up
-In order to run boop-io locally, you need to have Node.js and npm installed for your machine. Once you have those, clone this repo, cd into it from the terminal/command line, then run:
+In order to run boop-io locally, you need to have Node.js and npm installed for your machine, as well as a symbolic link between nodejs and node created. You can do this with the following command:
+```
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+```
+Once you have those, clone this repo, cd into it from the terminal/command line, then run:
 ```
 npm install
 ```
