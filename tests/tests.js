@@ -11,4 +11,14 @@ describe('Requests to the root path', function() {
 				done();
 			});
 	});
+
+	it('Returns a boop', function() {
+		request(app)
+			.get('/')
+			.expect('Boop!')
+			.end(function(error) {
+				if (error) throw error;
+				done();
+			})
+	});
 });
