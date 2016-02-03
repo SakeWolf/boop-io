@@ -1,8 +1,6 @@
 var express = require('express');
 var app = express();
 
-app.get('/', function (request, response) {
-	response.json("Boop!");
-});
+app.use(express.static("public"));
 
 module.exports = app;

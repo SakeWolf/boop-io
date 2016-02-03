@@ -2,23 +2,14 @@ var request = require('supertest');
 var app = require('./../app/index.js');
 
 describe('Requests to the root path', function() {
-	it('Returns a 200 status code', function() {
+	it('Returns a 200 status code', function(done) {
 		request(app)
 			.get('/')
-			.expect(200)
-			.end(function(error) {
-				if (error) throw error;
-				done();
-			});
+			.expect(200, done);
 	});
-
-	it('Returns a boop', function() {
+	it('Returns an index html file', function(done) {
 		request(app)
 			.get('/')
-			.expect('Boop!')
-			.end(function(error) {
-				if (error) throw error;
-				done();
-			})
+			.expect('Content-Type', /html/, done);
 	});
 });
