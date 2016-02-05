@@ -1,7 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="diceRoller">
 	<head>
+		<meta charset="UTF-8">
 		<title>BoopIO</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
 	</head>
-	<body>Boop!</body>
+	<body ng-controller="DiceController as dice">
+		<h1>BoopIO - A Dice Rolling Client</h1>
+		<p>Roll {{dice.numberOfDice}}d{{dice.sides}}?</p>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+		<script src="client.js"></script>
+	</body>
 </html>

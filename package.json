@@ -1,13 +1,13 @@
 {
   "name": "boop-io",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A room-based chat application intended for dice-rolling.",
   "main": "app/index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha tests/tests.js"
+    "test": "mocha tests/app_tests.js"
   },
   "repository": {
     "type": "git",
